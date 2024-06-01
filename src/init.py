@@ -1,5 +1,5 @@
 from keras.datasets import boston_housing
-from neuralnetwork import NeuralNetwork
+from src.neuralnetwork import NeuralNetwork
 import numpy as np
 import matplotlib.pyplot as plt
 
