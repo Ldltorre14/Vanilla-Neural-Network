@@ -1,5 +1,5 @@
 from keras.datasets import boston_housing
-from src.neuralnetwork import NeuralNetwork
+from neuralnetwork import NeuralNetwork
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -29,12 +29,13 @@ print(f"Test Targets: {y_test[:2]}\n")
 #PARAMETERS
 weight1 = np.random.randn(x_train.shape[1], hidden_layer_units_num)
 weight2 = np.random.randn(hidden_layer_units_num, output_layer_units_num)
-biases = None
+biases1 = np.random.rand(hidden_layer_units_num)
+biases2 = np.random.randn(output_layer_units_num)
 learning_rate = 0.0001
 
 
-print(f"Weights Shape: {weight1.shape}")
-print(f"Biases Shape: {biases.shape}")
+print(f"Weights Shape: {weight1.shape}\n{weight2.shape}")
+print(f"Biases Shape: {biases1.shape}\n{biases2.shape}")
 
 
 #plt.scatter(x_train[:,1],y_train)

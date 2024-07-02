@@ -1,6 +1,6 @@
 import numpy as np
-from src.activations import sigmoid,stepFunctions,tanh,ReLU,leaky_ReLU
-from src.lossfn import mse, mae
+from activations import sigmoid,stepFunctions,tanh,ReLU,leaky_ReLU
+from lossfn import mse, mae
 
 class NeuralNetwork:
     def __init__(self, x_train, y_train, x_test, y_test,
